@@ -41,7 +41,7 @@ Más info en "https://www.uvigo.gal/universidade/conecenos".
 <!--YO HAGO DESDE AQUÍ 6 MÁS-->
     <!--regla 7-->
     <category>
-        <pattern>Que <set>horas</set> ^ tiene la <set>secretaria</set> del <set>centro</set></pattern>
+        <pattern>Que <set>horas</set> ^ <set>tiene</set> ^ <set>secretaria</set> <set>determinantes</set> <set>centro</set></pattern>
         <template>La Secretaría de la ESEI ofrece Atención al Público de Lunes a Viernes, de 9:00 a 14:00h.</template>
     </category>
 
