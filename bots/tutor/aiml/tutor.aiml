@@ -59,7 +59,7 @@ Más info en "https://www.uvigo.gal/universidade/conecenos".
 
     <!--regla 10-->
     <category>
-        <pattern><set>existe</set> ^ delegacion ^ <set>alumnos</set> ^</pattern>
+        <pattern><set>existe</set> ^ <set>delegacion</set> ^ <set>alumnos</set> ^</pattern>
         <template>Si, cada dos años los estudiantes eligen a sus representantes en los órganos de gobierno de la ESEI (Xunta de Centro y diferentes comisiones), así como en órganos de gobierno de la Universidad (Claustro e Consello de Gobierno). La Delegación, conocida como ESEIDA, está a vuestra disposición en su local de la primera planta, así como en el teléfono 988 387 000 o en eseida@esei.uvigo.es. Más info en "https://esei.uvigo.es/a-esei/delegacion-de-alumnos/".</template>
     </category>
 
