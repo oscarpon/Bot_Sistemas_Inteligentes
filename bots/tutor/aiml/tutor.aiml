@@ -38,6 +38,7 @@ Más info en "https://www.uvigo.gal/universidade/conecenos".
         <template>La Secretaría de la ESEI se encuentra en la planta baja, accesible desde el Hall, localizada a mano derecha de Conserjería.</template>
     </category>
 
+<!--YO HAGO DESDE AQUÍ 6 MÁS-->
     <!--regla 7-->
     <category>
         <pattern>Que horario ^ tiene la secretaria del centro</pattern>
@@ -46,7 +47,7 @@ Más info en "https://www.uvigo.gal/universidade/conecenos".
 
     <!--regla 8-->
     <category>
-        <pattern> ^ que ^ el PAT</pattern>
+        <pattern> ^ que <set>ser</set> ^ PAT</pattern>
         <template>El PAT (Plan de Acción Tutorial) de la ESEI es un programa de atención personalizada dirigido al alumnado de nuevo ingreso. Más info en "https://esei.uvigo.es/docencia/pat-plan-de-accion-titorial/".</template>
     </category>
 
