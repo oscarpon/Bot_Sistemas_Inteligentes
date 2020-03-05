@@ -71,7 +71,7 @@ Más info en "https://www.uvigo.gal/universidade/conecenos".
 
       <!--regla 12-->
     <category>
-        <pattern>Que ^ practicas ^ <set>alumno</set> ^ ESEI</pattern>
+        <pattern><set>que</set> ^ practicas ^ <set>alumnos</set> ^ ESEI</pattern>
         <template>Como estudiante de las titulaciones de la ESEI puedes realizar prácticas en empresas como complemento de tus estudios. Según la titulación que estés cursando,
 	la realización de prácticas tendrá características y consecuencias diferentes:
 
