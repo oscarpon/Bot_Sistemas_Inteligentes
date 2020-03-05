@@ -1,4 +1,7 @@
 delegacion
-representantes
-representantes
-delegaciones
+embajada
+agencia
+gestion
+comite
+filial
+sucursal

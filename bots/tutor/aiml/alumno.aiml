@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<aiml>
+
+    <category>
+        <pattern>como te llamas</pattern>
+        <template>Me llamo <bot name="name"/></template>
+    </category>
+
+    <category>
+        <pattern>de donde eres</pattern>
+        <template>Soy de <bot name="place"/></template>
+    </category>
+
+    <category>
+        <pattern>cuantos anhos tienes</pattern>
+        <template>Tengo <bot name="age"/> años</template>
+    </category>
+
+    <category>
+        <pattern>tienes algun hobby</pattern>
+        <template>Me encanta <bot name="hobby"/></template>
+    </category>
+
+    <category>
+        <pattern>en cuantas asignaturas estas matriculado</pattern>
+        <template>Este año me he matriculado de <bot name="matriculadas" /> asignaturas</template>
+    </category>
+
+    <category>
+        <pattern>cuantas asignaturas has superado</pattern>
+        <template>Ya he aprobado <bot name="aprobadas"/> asignaturas</template>
+    </category>
+
+    <category>
+        <pattern>cual es tu asignatura favorita</pattern>
+        <template>Mi asignatura favorita es <bot name="favorita"/></template>
+    </category>
+
+</aiml>

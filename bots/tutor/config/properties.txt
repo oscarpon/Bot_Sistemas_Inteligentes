@@ -1,9 +1,14 @@
-url:http://www.alicebot.org
-name:opbot
-email:callmom-info@pandorabots.com
+url:http://esei.uvigo.es/
+name:Brais
+email:bctorreira17@esei.uvigo.es
 gender:male
-botmaster:Dr. Richard S. Wallace
-organization:ALICE AI Foundation
-version:0.0.4
-age:22
+botmaster:Brais Cantorna
+organization:ESEI
+version:0.0.1
+age:23
 
+place:Santiago
+matriculadas:10
+aprobadas:20
+favorita:Sistemas Inteligentes
+hobby:ir de parranda

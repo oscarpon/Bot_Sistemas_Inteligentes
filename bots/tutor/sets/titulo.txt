@@ -3,3 +3,4 @@ titulo
 grado
 master
 estudios
+licenciatura
