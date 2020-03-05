@@ -2,3 +2,4 @@ estudiantes
 alumnos
 alumnas
 estudiante
+alumno
