@@ -65,13 +65,13 @@ Más info en "https://www.uvigo.gal/universidade/conecenos".
 
     <!--regla 11-->
     <category>
-        <pattern>^ suplemento europeo ^ titulo</pattern>
+        <pattern>^ suplemento <set>europeo</set> ^ <set>titulo</set></pattern>
         <template>El Suplemento Europeo al Título (SET) es el documento que otorga validez comunitaria al currículum académico. Consiste en un anexo a la titulación universitaria en el que se pormenorizan las materias cursadas, idiomas impartidos, créditos realizados, competencias adquiridas, resultados académicos y cualificación profesional del graduado, máster ou doctorado, con sus nombres y apellidos, entre otras acreditaciones fidedignas en toda Europa. Más info en "https://esei.uvigo.es/estudos/suplemento-europeo-ao-titulo/".</template>
     </category>
 
       <!--regla 12-->
     <category>
-        <pattern>Que ^ practicas ^ alumno ^ ESEI</pattern>
+        <pattern>Que ^ practicas ^ <set>alumno</set> ^ ESEI</pattern>
         <template>Como estudiante de las titulaciones de la ESEI puedes realizar prácticas en empresas como complemento de tus estudios. Según la titulación que estés cursando,
 	la realización de prácticas tendrá características y consecuencias diferentes:
 
