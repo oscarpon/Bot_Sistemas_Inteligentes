@@ -2,39 +2,38 @@
 <aiml>
     <!--primera regla 1-->
     <category>
-        <pattern>* sobre la Universidad de Vigo</pattern>
-        <template>La Universidad de Vigo es una institución nueva y dinámica que te ofrece una gran oferta formativa en los tres campus especializados e innovadores que la conforman.
-Más info en "https://www.uvigo.gal/universidade/conecenos".
+        <pattern>^ <set>contar</set> ^ <set>uvigo</set></pattern>
+        <template>La Universidad de Vigo es una institución nueva y dinámica que te ofrece una gran oferta formativa en los tres campus especializados e innovadores que la conforman. Más info en "https://www.uvigo.gal/universidade/conecenos".
         </template>
     </category>
 
     <!--primera regla 2-->
     <category>
-        <pattern>^ Donde ^ encuentra ^ ESEI</pattern>
+        <pattern>^ donde ^ <set>esta</set> ^ <set>esei</set></pattern>
         <template>La ESEI (Escola Superior de Enxeñaría Informática) se encuentra en el campus de Ourense de la Universidad de Vigo, concretamente en "Campus de Ourense – Edificio Politécnico 32004 – Ourense – España". Más info en "https://goo.gl/maps/jEZKkM3d9ceA1WV57".</template>
     </category>
 
     <!--primera regla 3-->
     <category>
-        <pattern>^ que ^ estudiar en la ESEI</pattern>
+        <pattern>que ^ <set>estudiar</set> ^ <set>ESEI</set></pattern>
         <template>En la ESEI se ofrece la posibilidad de estudiar el Grado en Ingeniería Informática, el (en vía de extinción) programa conjunto de ADE + Ingeniería Informática, el Máster Universitario en Ingeniería Informática, el Suplemento Europeo al Título (SET) y, finalmente, Doctorados en Sistemas de Software Inteligentes y Adaptables y en agua, sostenibilidad y desarrollo.</template>
     </category>
 
     <!--regla 4-->
     <category>
-        <pattern>Por que ^ estudiar en la ESEI</pattern>
+        <pattern>Por que ^ estudiar ^ en la <set>ESEI</set></pattern>
         <template>Existen muchas y buenas razones por las que estudiar en la ESEI, pero se pueden resumir en las 10 razones de la ACM (Association for Computer Machinery), una de las principales asociaciones mundiales de referencia en nuestro ámbito, listadas en "https://esei.uvigo.es/razons-polas-que-estudar-na-esei/".</template>
     </category>
 
     <!--regla 5-->
     <category>
-        <pattern>Hay ^ cafeteria en la ESEI</pattern>
+        <pattern> ^ cafeteria ^ <set>ESEI</set></pattern>
         <template>Si, se encuentra en la planta baja, directamente accesible desde la terraza.</template>
     </category>
 
     <!--regla 6-->
     <category>
-        <pattern>Donde ^ Secretaria de la ESEI</pattern>
+        <pattern>Donde <set>esta</set> ^ <set>secretaria</set> de la <set>ESEI</set></pattern>
         <template>La Secretaría de la ESEI se encuentra en la planta baja, accesible desde el Hall, localizada a mano derecha de Conserjería.</template>
     </category>
 
@@ -47,7 +46,7 @@ Más info en "https://www.uvigo.gal/universidade/conecenos".
 
     <!--regla 8-->
     <category>
-        <pattern> ^ que <set>ser</set> ^ PAT</pattern>
+        <pattern> ^ que <set>ser</set> ^ <set>pat</set></pattern>
         <template>El PAT (Plan de Acción Tutorial) de la ESEI es un programa de atención personalizada dirigido al alumnado de nuevo ingreso. Más info en "https://esei.uvigo.es/docencia/pat-plan-de-accion-titorial/".</template>
     </category>
 
@@ -72,36 +71,32 @@ Más info en "https://www.uvigo.gal/universidade/conecenos".
       <!--regla 12-->
     <category>
         <pattern><set>que</set> ^ practicas ^ <set>alumnos</set> ^ ESEI</pattern>
-        <template>Como estudiante de las titulaciones de la ESEI puedes realizar prácticas en empresas como complemento de tus estudios. Según la titulación que estés cursando,
-	la realización de prácticas tendrá características y consecuencias diferentes:
+        <template>Como estudiante de las titulaciones de la ESEI puedes realizar prácticas en empresas como complemento de tus estudios. Según la titulación que estés cursando, la realización de prácticas tendrá características y consecuencias diferentes:
+    - Grado en Ingeniería Informática: se pueden realizar prácticas de 6 ECTS (150 horas) ou 12 ECTS (300 horas), que se contabilizan como créditos optativos a detraer de los créditos de optatividad que debes cursar. Son prácticas curriculares, aunque también se poden hacer extracurriculares y figurarán en el expediente académico del estudiante.
+    - Máster en Ingeniería Informática: la realización de las prácticas será obrigatoria y se lleva a cabo en el tercer semestre del máster. Son prácticas curriculares, aunque también se pueden hacer extracurriculares y figurarán en el expediente académico del estudiante.
 
-     - Grado en Ingeniería Informática: se pueden realizar prácticas de 6 ECTS (150 horas) ou 12 ECTS (300 horas), que se contabilizan como créditos optativos a 
-	   detraer de los créditos de optatividad que debes cursar. Son prácticas curriculares, aunque también se poden hacer extracurriculares y figurarán en el expediente académico del estudiante.
-	 - Máster en Ingeniería Informática: la realización de las prácticas será obrigatoria y se lleva a cabo en el tercer semestre del máster. Son prácticas curriculares, 
-	   aunque también se pueden hacer extracurriculares y figurarán en el expediente académico del estudiante.
-
-	Independientemente del tipo de prácticas que se oferten, es necesario disponer de un convenio de colaboración en vigor, de cuya tramitación se encarga la Fundación Universidad de Vigo (FUVI). Más info en "https://esei.uvigo.es/docencia/practicas-en-empresa/".</template>
+Independientemente del tipo de prácticas que se oferten, es necesario disponer de un convenio de colaboración en vigor, de cuya tramitación se encarga la Fundación Universidad de Vigo (FUVI). Más info en "https://esei.uvigo.es/docencia/practicas-en-empresa/".</template>
     </category>
 
     <!--regla 13-->
     <category>
-        <pattern>Donde ^ practicas * empresas</pattern>
+        <pattern>^ practicas ^ <set>empresa</set></pattern>
         <template>Puedes consultar la oferta de prácticas en empresas en "https://esei.uvigo.es/docencia/ofertas-de-practicas/".</template>
     </category>
 
     <!--regla 14-->
     <category>
-        <pattern>Con que recursos materiales y servicios cuenta la ESEI</pattern>
+        <pattern>^ que <set>recursos</set> <set>tiene</set> la <set>esei</set></pattern>
         <template>La ESEI cuenta con los recursos materiales y servicios listados y descritos en "https://esei.uvigo.es/a-esei/recursos-materiais-e-servizos/aulas-laboratorios-seminarios-e-despachos/".</template>
     </category>
 
     <!--regla 15-->
     <category>
-        <pattern>Que ^ Trabajos Fin de Grado o de Master </pattern>
+        <pattern>^ que ^ <set>ser</set> ^ <set>tfg</set> ^</pattern>
         <template>Todas las titulaciones de la ESEI tienen como requisito imprescindible la realización de un trabajo de fin de carrera, cuyas características variarán en función de la titulación de la que se trate.
 
-    Trabajo Fin de Grado: se llama así al trabajo que hacen los estudiantes del Grado en Ingeniería Informática.
-    Trabajo Fin de Máster: se llama así al trabajo que hacen los estudiantes del MEI.</template>
+Trabajo Fin de Grado: se llama así al trabajo que hacen los estudiantes del Grado en Ingeniería Informática.
+Trabajo Fin de Máster: se llama así al trabajo que hacen los estudiantes del MEI.</template>
     </category>
 
     <!--regla 16-->
@@ -112,18 +107,15 @@ Más info en "https://www.uvigo.gal/universidade/conecenos".
 
     <!--regla 17-->
     <category>
-        <pattern>Como ^ justificar ^ asistencia ^</pattern>
+        <pattern>Como ^ <set>justificar</set> ^ asistencia ^</pattern>
         <template>Puedes justificar tu asistencia haciendo uso de formularios disponibles en "https://esei.uvigo.es/a-esei/formularios/formularios-xerais/".</template>
     </category>
 
     <!--regla 18-->
     <category>
-        <pattern>^ actividades deportivas ^ la ESEI</pattern>
+        <pattern>^ <set>actividad</set> <set>tiene</set> la <set>esei</set></pattern>
         <template>La ESEI en sí misma no ofrece actividades deportivas. No obstante, desde la página de la ESEI "https://esei.uvigo.es" puedes acceder a la página de Deportes de la Universidad de Vigo seleccionando la opción en la parte superior de la página o usando la dirección "https://www.uvigo.gal/campus/deporte" en tu navegador.</template>
     </category>
-
-    <!--regla 19 por defecto-->
-
 
 
 </aiml>
