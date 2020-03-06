@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <aiml>
 
+<category>
+        <pattern>quien eres</pattern>
+        <template>
+            <srai>como te llamas</srai>
+        </template>
+    </category>
+    
     <category>
         <pattern>como te llamas</pattern>
         <template>Me llamo <bot name="name"/></template>
     </category>
+    
 
     <category>
         <pattern>de donde eres</pattern>
@@ -17,8 +25,18 @@
     </category>
 
     <category>
+        <pattern>que edad tienes</pattern>
+        <template><srai>cuantos anhos tienes</srai></template>
+    </category>
+
+    <category>
         <pattern>tienes algun hobby</pattern>
         <template>Me encanta <bot name="hobby"/></template>
+    </category>
+
+    <category>
+        <pattern>que te gusta</pattern>
+        <template><srai>tienes algun hobby</srai></template>
     </category>
 
     <category>
@@ -32,7 +50,7 @@
     </category>
 
     <category>
-        <pattern>cual es tu asignatura favorita</pattern>
+        <pattern>^ asignatura favorita</pattern>
         <template>Mi asignatura favorita es <bot name="favorita"/></template>
     </category>
 
