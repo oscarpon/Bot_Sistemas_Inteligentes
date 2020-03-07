@@ -21,7 +21,7 @@
 
     <!--regla 4-->
     <category>
-        <pattern>Por que ^ estudiar ^ en la <set>ESEI</set></pattern>
+        <pattern>Por que ^ estudiar ^ <set>ESEI</set></pattern>
         <template>Existen muchas y buenas razones por las que estudiar en la ESEI, pero se pueden resumir en las 10 razones de la ACM (Association for Computer Machinery), una de las principales asociaciones mundiales de referencia en nuestro ámbito, listadas en "https://esei.uvigo.es/razons-polas-que-estudar-na-esei/".</template>
     </category>
 
@@ -101,7 +101,7 @@ Trabajo Fin de Máster: se llama así al trabajo que hacen los estudiantes del M
 
     <!--regla 16-->
     <category>
-        <pattern>Como ^ la Biblioteca</pattern>
+        <pattern>Como <set>llegar</set> la Biblioteca</pattern>
         <template>Para acceder a la página de la Biblioteca, simplemente pulsa el enlace en la parte superior de la página de "https://esei.uvigo.es", o usa directamente la dirección "http://www.perseo.biblioteca.uvigo.es/search*spi" en tu navegador.</template>
     </category>
 
