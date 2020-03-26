@@ -25,6 +25,11 @@
         <template>Existen muchas y buenas razones por las que estudiar en la ESEI, pero se pueden resumir en las 10 razones de la ACM (Association for Computer Machinery), una de las principales asociaciones mundiales de referencia en nuestro ámbito, listadas en "https://esei.uvigo.es/razons-polas-que-estudar-na-esei/".</template>
     </category>
 
+    <category>
+        <pattern>que hace atractivo estudiar en la esei</pattern>
+        <template><srai>Por que ^ estudiar ^ en la <set>ESEI</set></srai></template>
+    </category>
+
     <!--regla 5-->
     <category>
         <pattern> ^ cafeteria ^ <set>ESEI</set></pattern>
