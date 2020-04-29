@@ -1,0 +1,4 @@
+escuela
+centro
+facultad
+universidad

@@ -1,0 +1,15 @@
+url:http://esei.uvigo.es/
+name:Brais
+email:oscarponte97@gmail.com
+gender:male
+botmaster:Brais Cantorna
+organization:ESEI
+version:0.0.1
+age:23
+
+place:Ourense
+matriculadas:10
+aprobadas:20
+favorita:Sistemas Inteligentes
+hobby:ir de parranda
+amigos:Oscar, Brais, Iago

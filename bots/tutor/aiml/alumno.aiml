@@ -24,8 +24,9 @@
         <template>Tengo <bot name="age"/> años</template>
     </category>
 
+
     <category>
-        <pattern>que edad tienes</pattern>
+        <pattern>que edad tienes</pattern>   
         <template><srai>cuantos anhos tienes</srai></template>
     </category>
 

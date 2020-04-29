@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    
+    <category>
+        <pattern>como te llamas</pattern>
+        <template>Me llamo <bot name="name"/></template>
+    </category>
+
+    <category>
+        <pattern>quien eres</pattern>
+        <template>
+            <srai>como te llamas</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>cual es tu nombre</pattern>
+        <template>
+            <srai>como te llamas</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>de donde eres</pattern>
+        <template>Soy de <bot name="place"/></template>
+    </category>
+
+    <category>
+        <pattern>donde vives</pattern>
+        <template><srai>de donde eres</srai>></template>
+    </category>
+
+    <category>
+        <pattern>cuantos anhos tienes</pattern>
+        <template>Tengo <bot name="age"/> años</template>
+    </category>
+
+    <category>
+        <pattern>que edad tienes</pattern>
+        <template><srai>cuantos anhos tienes</srai></template>
+    </category>
+
+    <category>
+        <pattern>tienes algun hobby</pattern>
+        <template>Me encanta <bot name="hobby"/></template>
+    </category>
+
+    <category>
+        <pattern>que te gusta</pattern>
+        <template><srai>tienes algun hobby</srai></template>
+    </category>
+
+    <category>
+        <pattern>en cuantas asignaturas estas matriculado</pattern>
+        <template>Este año me he matriculado de <bot name="matriculadas"/> asignaturas</template>
+    </category>
+
+    <category>
+        <pattern>cuantas <set>asignaturas</set> ^ <set>aprobado</set></pattern>
+        <template>Ya he aprobado <bot name="aprobadas"/> asignaturas</template>
+    </category>
+
+    <category>
+        <pattern>^ <set>asignaturas</set> favorita</pattern>
+        <template>Mi asignatura favorita es <bot name="favorita"/></template>
+    </category>
+
+    <!--regla comodín, cuando no hay respuesta-->
+  
+    <category>
+        <pattern>^</pattern>
+        <template>
+        <think><set name="variable"><star/></set></think>
+        Lo siento no tengo respuesta para eso
+        </template>
+    </category>
+
+    <category>
+        <pattern>soy tu botmaster aprende ^</pattern>
+        <that>Lo siento no tengo respuesta para eso</that>
+        <template>
+            <learn>
+            <category>
+            <pattern><eval><get name="variable"/></eval></pattern>
+            <template><eval><star/></eval></template>
+            </category>
+            </learn>
+            ok..
+        </template>
+    </category>
+
+</aiml>

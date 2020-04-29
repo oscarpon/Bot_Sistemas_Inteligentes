@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-    <!--primera regla 1-->
+
     <category>
         <pattern>^ <set>contar</set> ^ <set>uvigo</set></pattern>
         <template>La Universidad de Vigo es una institución nueva y dinámica que te ofrece una gran oferta formativa en los tres campus especializados e innovadores que la conforman. Más info en "https://www.uvigo.gal/universidade/conecenos".
         </template>
     </category>
+     
 
+    
     <!--primera regla 2-->
     <category>
         <pattern>^ donde ^ <set>esta</set> ^ <set>esei</set></pattern>
         <template>La ESEI (Escola Superior de Enxeñaría Informática) se encuentra en el campus de Ourense de la Universidad de Vigo, concretamente en "Campus de Ourense – Edificio Politécnico 32004 – Ourense – España". Más info en "https://goo.gl/maps/jEZKkM3d9ceA1WV57".</template>
-    </category>
+    </category>-->
 
     <!--primera regla 3-->
     <category>
-        <pattern>que ^ <set>estudiar</set> ^ <set>ESEI</set></pattern>
+        <pattern>que puedo estudiar en la esei <set>ESEI</set></pattern>
         <template>En la ESEI se ofrece la posibilidad de estudiar el Grado en Ingeniería Informática, el (en vía de extinción) programa conjunto de ADE + Ingeniería Informática, el Máster Universitario en Ingeniería Informática, el Suplemento Europeo al Título (SET) y, finalmente, Doctorados en Sistemas de Software Inteligentes y Adaptables y en agua, sostenibilidad y desarrollo.</template>
     </category>
 
-    <!--regla 4-->
+
+
+    <!--regla 4-
     <category>
         <pattern>Por que ^ estudiar ^ en la <set>ESEI</set></pattern>
         <template>Existen muchas y buenas razones por las que estudiar en la ESEI, pero se pueden resumir en las 10 razones de la ACM (Association for Computer Machinery), una de las principales asociaciones mundiales de referencia en nuestro ámbito, listadas en "https://esei.uvigo.es/razons-polas-que-estudar-na-esei/".</template>
-    </category>
+    </category>-->
 
     <category>
         <pattern>que hace atractivo estudiar en la esei</pattern>
@@ -49,11 +53,35 @@
         <template>La Secretaría de la ESEI ofrece Atención al Público de Lunes a Viernes, de 9:00 a 14:00h.</template>
     </category>
 
+ 
     <!--regla 8-->
     <category>
         <pattern> ^ que <set>ser</set> ^ <set>pat</set></pattern>
         <template>El PAT (Plan de Acción Tutorial) de la ESEI es un programa de atención personalizada dirigido al alumnado de nuevo ingreso. Más info en "https://esei.uvigo.es/docencia/pat-plan-de-accion-titorial/".</template>
     </category>
+
+<!--regla  8 general -->
+    <category>
+        <pattern> *<set>pat</set>*</pattern>
+        <template>
+		<think>
+			<set var="cap"><srai> <star/></srai></set> 
+		</think>
+		<condition var="cap">
+		<li> <value>NO LO SE</value> 
+			<learn>
+				<category>
+					<pattern>^ $CUAL ES LA CAPITAL DE <eval><star/></eval></pattern> 
+					<template>La capital de <eval><star/></eval> es <eval><star index="2"/></eval></template>
+				</category>
+			</learn>
+			A partir de ahora, recordaré que la capital de <star/> es <star index="2"/>. 
+		</li>
+		<li> Ya sabia que <get var="cap"/> </li>
+		</condition>
+        </template>
+    </category>
+
 
     <!--regla 9-->
     <category>
