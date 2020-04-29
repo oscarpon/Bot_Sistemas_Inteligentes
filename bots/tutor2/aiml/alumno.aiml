@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <aiml>
     
     <category>
@@ -35,9 +35,8 @@
         <template>Tengo <bot name="age"/> años</template>
     </category>
 
-
     <category>
-        <pattern>que edad tienes</pattern>   
+        <pattern>que edad tienes</pattern>
         <template><srai>cuantos anhos tienes</srai></template>
     </category>
 
@@ -57,13 +56,37 @@
     </category>
 
     <category>
-        <pattern>cuantas <set>asignatura</set> ^ <set>aprobado</set></pattern>
+        <pattern>cuantas <set>asignaturas</set> ^ <set>aprobado</set></pattern>
         <template>Ya he aprobado <bot name="aprobadas"/> asignaturas</template>
     </category>
 
     <category>
-        <pattern>^ <set>asignatura</set> favorita</pattern>
+        <pattern>^ <set>asignaturas</set> favorita</pattern>
         <template>Mi asignatura favorita es <bot name="favorita"/></template>
+    </category>
+
+    <!--regla comodín, cuando no hay respuesta-->
+  
+    <category>
+        <pattern>^</pattern>
+        <template>
+        <think><set name="variable"><star/></set></think>
+        Lo siento no tengo respuesta para eso
+        </template>
+    </category>
+
+    <category>
+        <pattern>soy tu botmaster aprende ^</pattern>
+        <that>Lo siento no tengo respuesta para eso</that>
+        <template>
+            <learn>
+            <category>
+            <pattern><eval><get name="variable"/></eval></pattern>
+            <template><eval><star/></eval></template>
+            </category>
+            </learn>
+            ok..
+        </template>
     </category>
 
 </aiml>

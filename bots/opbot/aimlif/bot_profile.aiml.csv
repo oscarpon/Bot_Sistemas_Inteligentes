@@ -1,3 +1,6 @@
-0,HOLA,*,*,Hola#Comma ¿Qué tal?,bot_profile.aiml
-0,YO BIEN QUE TAL Y TU,*,*,Estoy genial!,bot_profile.aiml
-0,COMO TE LLAMAS,*,*,Mi nombre es oscar,bot_profile.aiml
+0,^ QUE TAL Y TU,*,*,Estoy genial!,bot_profile.aiml
+0,^ ME LLAMO *,*,*,Que casualidad <star index="2"/>#Comma yo me llamo: oscar,bot_profile.aiml
+0,* QUE TAL,*,*,HOLA,bot_profile.aiml
+0,BUENOS DÍAS,*,*,HOLA,bot_profile.aiml
+0,BUENAS TARDES,*,*,HOLA,bot_profile.aiml
+0,QUE TAL,*,*,HOLA,bot_profile.aiml

@@ -1,0 +1,6 @@
+carrera
+titulo
+grado
+master
+estudios
+licenciatura

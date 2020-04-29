@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <!--regla 1-->
+    <category>
+        <pattern>^ <set>contar</set> ^ <set>uvigo</set></pattern>
+        <template>La Universidad de Vigo es una institución nueva y dinámica que te ofrece una gran oferta formativa en los tres campus especializados e innovadores que la conforman. Más info en "https://www.uvigo.gal/universidade/conecenos".
+        </template>
+    </category>
+
+    <!--regla 2-->
+    <category>
+        <pattern>^ donde ^ <set>esta</set> ^ <set>esei</set></pattern>
+        <template>La ESEI (Escola Superior de Enxeñaría Informática) se encuentra en el campus de Ourense de la Universidad de Vigo, concretamente en "Campus de Ourense – Edificio Politécnico 32004 – Ourense – España". Más info en "https://goo.gl/maps/jEZKkM3d9ceA1WV57".</template>
+    </category>
+
+    <!--regla 3-->
+    <category>
+        <pattern>que ^ <set>estudiar</set> ^ <set>ESEI</set></pattern>
+        <template>En la ESEI se ofrece la posibilidad de estudiar el Grado en Ingeniería Informática, el (en vía de extinción) programa conjunto de ADE + Ingeniería Informática, el Máster Universitario en Ingeniería Informática, el Suplemento Europeo al Título (SET) y, finalmente, Doctorados en Sistemas de Software Inteligentes y Adaptables y en agua, sostenibilidad y desarrollo.</template>
+    </category>
+
+    <!--regla 3 bis-->
+    <category>
+        <pattern>que ^ <set>tiene</set> ^ <set>ESEI</set> ^ <set>estudiar</set> ^ </pattern>
+        <template><srai>que puedo estudiar en la esei</srai></template>
+    </category>
+
+    <!--regla 4-->
+    <category>
+        <pattern>Por que ^ estudiar ^ <set>ESEI</set></pattern>
+        <template>Existen muchas y buenas razones por las que estudiar en la ESEI, pero se pueden resumir en las 10 razones de la ACM (Association for Computer Machinery), una de las principales asociaciones mundiales de referencia en nuestro ámbito, listadas en "https://esei.uvigo.es/razons-polas-que-estudar-na-esei/".</template>
+    </category>
+
+    <!--regla 4 bis-->
+    <category>
+        <pattern>^ que <set>tiene</set> ^ <set>ESEI</set> ^ <set>estudiar</set></pattern>
+        <template><srai>Por que estudiar en la esei</srai></template></category>
+
+    <!--regla 5-->
+    <category>
+        <pattern> ^ cafeteria ^ <set>ESEI</set></pattern>
+        <template>Si, se encuentra en la planta baja, directamente accesible desde la terraza.</template>
+    </category>
+
+    <!--regla 6-->
+    <category>
+        <pattern>Donde <set>esta</set> ^ <set>secretaria</set> de la <set>ESEI</set></pattern>
+        <template>La Secretaría de la ESEI se encuentra en la planta baja, accesible desde el Hall, localizada a mano derecha de Conserjería.</template>
+    </category>
+
+    <!--regla 7-->
+    <category>
+        <pattern>Que <set>horas</set> ^ <set>tiene</set> ^ <set>secretaria</set> <set>determinantes</set> <set>centro</set></pattern>
+        <template>La Secretaría de la ESEI ofrece Atención al Público de Lunes a Viernes, de 9:00 a 14:00h.</template>
+    </category>
+
+    <!--regla 8-->
+    <category>
+        <pattern> ^ que <set>ser</set> ^ <set>pat</set></pattern>
+        <template>El PAT (Plan de Acción Tutorial) de la ESEI es un programa de atención personalizada dirigido al alumnado de nuevo ingreso. Más info en "https://esei.uvigo.es/docencia/pat-plan-de-accion-titorial/".</template>
+    </category>
+
+    <!--regla 9-->
+    <category>
+        <pattern>^ protocolo de <set>acogida</set> ^ <set>alumnos</set> ^ necesidades ^ especiales</pattern>
+        <template>En la búsqueda de la integración total de las personas con discapacidad, tanto en el ámbito académico como en el laboral, la Universidad de Vigo dispone de varios programas. El Programa de inserción de discapacitados, promovido por la Vicerrectoría de Extensión Universitaria y Relaciones Internacionales, favorece la integración plena del estudiantado en la vida universitaria. Más info en "https://www.uvigo.gal/es/campus/salud-bienestar/unidad-atencion-estudiantado-necesidades-especificas-apoyo-educativo-unaten".</template>
+    </category>
+
+    <!--regla 10-->
+    <category>
+        <pattern><set>existe</set> ^ <set>delegacion</set> ^ <set>alumnos</set> ^</pattern>
+        <template>Si, cada dos años los estudiantes eligen a sus representantes en los órganos de gobierno de la ESEI (Xunta de Centro y diferentes comisiones), así como en órganos de gobierno de la Universidad (Claustro e Consello de Gobierno). La Delegación, conocida como ESEIDA, está a vuestra disposición en su local de la primera planta, así como en el teléfono 988 387 000 o en eseida@esei.uvigo.es. Más info en "https://esei.uvigo.es/a-esei/delegacion-de-alumnos/".</template>
+    </category>
+
+     <!--regla 10 bis-->
+     <category>
+        <pattern>Hay alguna delegacion de alumnos en la ESEI</pattern>
+        <template>Si, cada dos años los estudiantes eligen a sus representantes en los órganos de gobierno de la ESEI (Xunta de Centro y diferentes comisiones), así como en órganos de gobierno de la Universidad (Claustro e Consello de Gobierno). La Delegación, conocida como ESEIDA, está a vuestra disposición en su local de la primera planta, así como en el teléfono 988 387 000 o en eseida@esei.uvigo.es. Más info en "https://esei.uvigo.es/a-esei/delegacion-de-alumnos/".</template>
+    </category>
+
+    <!--regla 11-->
+    <category>
+        <pattern>^ suplemento <set>europeo</set> ^ <set>titulo</set></pattern>
+        <template>El Suplemento Europeo al Título (SET) es el documento que otorga validez comunitaria al currículum académico. Consiste en un anexo a la titulación universitaria en el que se pormenorizan las materias cursadas, idiomas impartidos, créditos realizados, competencias adquiridas, resultados académicos y cualificación profesional del graduado, máster ou doctorado, con sus nombres y apellidos, entre otras acreditaciones fidedignas en toda Europa. Más info en "https://esei.uvigo.es/estudos/suplemento-europeo-ao-titulo/".</template>
+    </category>
+
+      <!--regla 12-->
+    <category>
+        <pattern><set>que</set> ^ practicas ^ <set>alumnos</set> ^ ESEI</pattern>
+        <template>Como estudiante de las titulaciones de la ESEI puedes realizar prácticas en empresas como complemento de tus estudios. Según la titulación que estés cursando, la realización de prácticas tendrá características y consecuencias diferentes:
+    - Grado en Ingeniería Informática: se pueden realizar prácticas de 6 ECTS (150 horas) ou 12 ECTS (300 horas), que se contabilizan como créditos optativos a detraer de los créditos de optatividad que debes cursar. Son prácticas curriculares, aunque también se poden hacer extracurriculares y figurarán en el expediente académico del estudiante.
+    - Máster en Ingeniería Informática: la realización de las prácticas será obrigatoria y se lleva a cabo en el tercer semestre del máster. Son prácticas curriculares, aunque también se pueden hacer extracurriculares y figurarán en el expediente académico del estudiante.
+
+Independientemente del tipo de prácticas que se oferten, es necesario disponer de un convenio de colaboración en vigor, de cuya tramitación se encarga la Fundación Universidad de Vigo (FUVI). Más info en "https://esei.uvigo.es/docencia/practicas-en-empresa/".</template>
+    </category>
+
+    <!--regla 13-->
+    <category>
+        <pattern>^ practicas ^ <set>empresa</set></pattern>
+        <template>Puedes consultar la oferta de prácticas en empresas en "https://esei.uvigo.es/docencia/ofertas-de-practicas/".</template>
+    </category>
+
+    <!--regla 14-->
+    <category>
+        <pattern>^ que <set>recursos</set> <set>tiene</set> la <set>esei</set></pattern>
+        <template>La ESEI cuenta con los recursos materiales y servicios listados y descritos en "https://esei.uvigo.es/a-esei/recursos-materiais-e-servizos/aulas-laboratorios-seminarios-e-despachos/".</template>
+    </category>
+
+    <!--regla 14 bis-->
+    <category>
+        <pattern>^ <set>tiene</set> ^ <set>recursos</set> ^ <set>ESEI</set></pattern>
+                <template><srai>que recursos tiene la esei</srai></template>
+
+    </category>
+
+    <!--regla 15-->
+    <category>
+        <pattern>^ que ^ <set>ser</set> ^ <set>tfg</set> ^</pattern>
+        <template>Todas las titulaciones de la ESEI tienen como requisito imprescindible la realización de un trabajo de fin de carrera, cuyas características variarán en función de la titulación de la que se trate.
+
+Trabajo Fin de Grado: se llama así al trabajo que hacen los estudiantes del Grado en Ingeniería Informática.
+Trabajo Fin de Máster: se llama así al trabajo que hacen los estudiantes del MEI.</template>
+    </category>
+
+    <!--regla 16-->
+    <category>
+        <pattern>Como ^ <set>llegar</set> ^ la Biblioteca</pattern>
+        <template>Para acceder a la página de la Biblioteca, simplemente pulsa el enlace en la parte superior de la página de "https://esei.uvigo.es", o usa directamente la dirección "http://www.perseo.biblioteca.uvigo.es/search*spi" en tu navegador.</template>
+    </category>
+
+    <!--regla 17-->
+    <category>
+        <pattern>^ <set>poder</set> ^ <set>justificar</set> ^ asistencia ^</pattern>
+        <template>Puedes justificar tu asistencia haciendo uso de formularios disponibles en "https://esei.uvigo.es/a-esei/formularios/formularios-xerais/".</template>
+    </category>
+
+    <!--regla 18-->
+    <category>
+        <pattern>^ <set>actividad</set> <set>tiene</set> la <set>esei</set></pattern>
+        <template>La ESEI en sí misma no ofrece actividades deportivas. No obstante, desde la página de la ESEI "https://esei.uvigo.es" puedes acceder a la página de Deportes de la Universidad de Vigo seleccionando la opción en la parte superior de la página o usando la dirección "https://www.uvigo.gal/campus/deporte" en tu navegador.</template>
+    </category>
+
+<!-- PRACTICA MARZO  -->
+
+
+<!--pregunta de la biblioteca-->
+    <category>
+        <pattern> ^ <set>delegacion</set> ^ <set>alumnos</set> ^ </pattern>
+        <template>
+            <think>
+                <set var="txt1"><star index="1"/></set> <!-- en la variable txt1 se guarda lo que hay entre las etiquetas set, en este caso todo el texto detrás de "delegacion" -->
+                <set var="txt3"><star index="3"/></set> <!-- lo mismo, el valor del star con index 3, lo que hay entre delegacion y alumnos-->
+                <set var="txt5"><star index="5"/></set>
+                <condition var="txt1"> <!--entramos en una condicion dependiente del valor de txt1-->
+                    <li value="unknown"> <!-- si el valor es "unknown"-->
+                        <set var="txt1"></set><!-- cambiamos el valor de txt por "", una cadena vacia, para que luego al hacer la pregunta no aparezca el texto UNKNOWN-->
+                    </li>
+                </condition>
+                <condition var="txt3"> 
+                    <li value="unknown">
+                        <set var="txt3"></set>
+                    </li>
+                </condition>
+                <condition var="txt5"> 
+                    <li value="unknown">
+                        <set var="txt5"></set>
+                    </li>
+                </condition>
+                <!-- ahora construimos la pregunta para poder guardarla si corresponde-->
+                <set name="pregunta"><get var="txt1"/><star index="2"/><get var="txt3"/><star index="4"/><get var="txt5"/></set>
+            </think> <!-- y despues de pensar todo, ponemos nuestra pregunta para ver si la suposicion es correcta -->
+            Te refieres a que te gustaria que te hablase sobre la delegacion de alumnos?
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            <set>si</set>
+        </pattern>
+        <that>Te refieres a que te gustaria que te hablase sobre la delegacion de alumnos?</that>
+        <template>
+            <learn>
+                <category>
+                    <pattern>
+                        <eval><get name="pregunta"/></eval>
+                    </pattern>
+                    <template>
+                        <srai>Existe una delegacion de alumnos en la ESEI</srai>
+                    </template>
+                </category>
+            </learn>
+            <srai>Existe una delegacion de alumnos en la ESEI</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            <set>no</set>
+        </pattern>
+        <that>Te refieres a que te gustaria que te hablase sobre la delegacion de alumnos?</that>
+        <template>
+            Lo siento, podrias reformular tu pregunta? A que te refieres?
+        </template>
+    </category>
+        
+
+<!--pregunta de la biblioteca-->
+    <category>
+        <pattern> ^ <set>llegar</set> ^ <set>biblioteca</set></pattern>
+        <template>
+            <think>
+                <set var="txt1"><star index="1"/></set> <!-- en la variable txt1 se guarda lo que hay entre las etiquetas set, en este caso todo el texto detrás de "delegacion" -->
+                <set var="txt3"><star index="3"/></set> <!-- lo mismo, el valor del star con index 3, lo que hay entre delegacion y alumnos-->
+                <condition var="txt1"> <!--entramos en una condicion dependiente del valor de txt1-->
+                    <li value="unknown"> <!-- si el valor es "unknown"-->
+                        <set var="txt1"></set><!-- cambiamos el valor de txt por "", una cadena vacia, para que luego al hacer la pregunta no aparezca el texto UNKNOWN-->
+                    </li>
+                </condition>
+                <condition var="txt3"> 
+                    <li value="unknown">
+                        <set var="txt3"></set>
+                    </li>
+                </condition>
+                <!-- ahora construimos la pregunta para poder guardarla si corresponde-->
+                <set name="pregunta"><get var="txt1"/><star index="2"/><get var="txt3"/><star index="4"/></set>
+            </think> <!-- y despues de pensar todo, ponemos nuestra pregunta para ver si la suposicion es correcta -->
+            Te refieres a como hacer para acceder a la biblioteca
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            <set>si</set>
+        </pattern>
+        <that>Te refieres a como hacer para acceder a la biblioteca</that>
+        <template>
+            <learn>
+                <category>
+                    <pattern>
+                        <eval><get name="pregunta"/></eval>
+                    </pattern>
+                    <template>
+                        <srai>Como hago para llegar a la biblioteca</srai>
+                    </template>
+                </category>
+            </learn>
+            <srai>Como hago para llegar a la biblioteca</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            <set>no</set>
+        </pattern>
+        <that>Te refieres a como hacer para acceder a la biblioteca</that>
+        <template>
+            Lo siento, podrias reformular tu pregunta? A que te refieres?
+        </template>
+    </category>
+
+<!--pregunta de recursos de la esei-->
+    <category>
+        <pattern>^ <set>recursos</set> ^ <set>tiene</set> ^ <set>esei</set></pattern>
+        <template>
+            <think>
+                <set var="txt1"><star index="1"/></set> 
+                <set var="txt3"><star index="3"/></set> 
+                <set var="txt3"><star index="5"/></set> 
+                <condition var="txt1">
+                    <li value="unknown">
+                        <set var="txt1"></set>
+                    </li>
+                </condition>
+                <condition var="txt3"> 
+                    <li value="unknown">
+                        <set var="txt3"></set>
+                    </li>
+                </condition>
+                <condition var="txt5"> 
+                    <li value="unknown">
+                        <set var="txt5"></set>
+                    </li>
+                </condition>
+                <set name="pregunta"><get var="txt1"/><star index="2"/><get var="txt3"/><star index="4"/><get var="txt5"/><star index="6"/></set>
+            </think> 
+            Te refieres a que recursos tiene la esei
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            <set>si</set>
+        </pattern>
+        <that>Te refieres a que recursos tiene la esei</that>
+        <template>
+            <learn>
+                <category>
+                    <pattern>
+                        <eval><get name="pregunta"/></eval>
+                    </pattern>
+                    <template>
+                        <srai>Con que recursos materiales y servicios cuenta la ESEI</srai>
+                    </template>
+                </category>
+            </learn>
+            <srai>Con que recursos materiales y servicios cuenta la ESEI</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            <set>no</set>
+        </pattern>
+        <that>Te refieres a que recursos tiene la esei</that>
+        <template>
+            Lo siento, podrias reformular tu pregunta? A que te refieres?
+        </template>
+    </category>
+
+<!--pregunta de suplemento europeo-->
+
+<category>
+        <pattern>^ <set>europeo</set> ^ <set>titulo</set> ^</pattern>
+        <template>
+            <think>
+                <set var="txt1"><star index="1"/></set>
+                <set var="txt3"><star index="3"/></set> 
+                <set var="txt5"><star index="5"/></set> 
+                <condition var="txt1">
+                    <li value="unknown">
+                        <set var="txt1"></set>
+                    </li>
+                </condition>
+                <condition var="txt3"> 
+                    <li value="unknown">
+                        <set var="txt3"></set>
+                    </li>
+                </condition>
+                <condition var="txt5"> 
+                    <li value="unknown">
+                        <set var="txt5"></set>
+                    </li>
+                </condition>
+                <set name="pregunta"><get var="txt1"/><star index="2"/><get var="txt3"/><star index="4"/><get var="txt5"/></set>
+            </think>
+            Te refieres a que quieres informacion sobre el suplemento europeo al titulo
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            <set>si</set>
+        </pattern>
+        <that>Te refieres a que quieres informacion sobre el suplemento europeo al titulo</that>
+        <template>
+            <learn>
+                <category>
+                    <pattern>
+                        <eval><get name="pregunta"/></eval>
+                    </pattern>
+                    <template>
+                        <srai>Que es el suplemento europeo al titulo</srai>
+                    </template>
+                </category>
+            </learn>
+            <srai>Que es el suplemento europeo al titulo</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            <set>no</set>
+        </pattern>
+        <that>Te refieres a que quieres informacion sobre el suplemento europeo al titulo</that>
+        <template>
+            Lo siento, podrias reformular tu pregunta? A que te refieres?
+        </template>
+    </category>
+
+
+<!-- regla de justificar asistencia -->
+    <category>
+        
+        <pattern>^ <set>justificar</set> ^ <set>asistencia</set> ^</pattern>
+        <template>
+            <think>
+                <set var="txt1"><star index="1"/></set>
+                <set var="txt3"><star index="3"/></set>
+                <set var="txt5"><star index="5"/></set>
+                <condition var="txt1"> 
+                    <li value="unknown"> 
+                        <set var="txt1"></set>
+                    </li>
+                </condition>
+                <condition var="txt3"> 
+                    <li value="unknown">
+                        <set var="txt3"></set>
+                    </li>
+                </condition>
+                <condition var="txt5"> 
+                    <li value="unknown">
+                        <set var="txt5"></set>
+                    </li>
+                </condition>
+                <set name="pregunta"><get var="txt1"/><star index="2"/><get var="txt3"/><star index="4"/><get var="txt5"/></set>
+            </think>
+            Te refieres a como justificar la asistencia a una evaluacion?
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            <set>si</set>
+        </pattern>
+        <that>te refieres a como justificar la asistencia a una evaluacion</that>
+        <template>
+            <learn>
+                <category>
+                    <pattern>
+                        <eval><get name="pregunta"/></eval>
+                    </pattern>
+                    <template>
+                        <srai>Existe una delegacion de alumnos en la ESEI</srai>
+                    </template>
+                </category>
+            </learn>
+            <srai>Existe una delegacion de alumnos en la ESEI</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            <set>no</set>
+        </pattern>
+        <that>te refieres a como justificar la asistencia a una evaluacion</that>
+        <template>
+            Lo siento, podrias reformular tu pregunta? A que te refieres?
+        </template>
+    </category>
+
+  
+<category>
+        <pattern></pattern>
+        <template>Lo siento, no tengo respuesta para eso</template>
+
+    <!--regla comodín, cuando no hay respuesta-->
+    <category>
+        <pattern>*</pattern>
+        <template>Lo siento, no tengo respuesta para eso</template>
+    </category>
+
+ <!--traduccion  test-->
+    <category>
+        <pattern>Traduce al * la frase * </pattern>
+        <template>
+            <set var="idioma"><star index="1"></set>
+            <set var="frase"><star index="2"></set>
+            Respondo: <translate> <to><map name="idioma"><get var="idioma"></map></to> <msg><get var="frase"></msg></translate></template>
+        </template>
+</category>
+  <!--servicio de mailing-->  
+    <category>
+        <pattern><set>solicitar</set> <set>que</set> *</pattern>
+        <template>
+            <mail>
+                <to>oscarponte97@gmail.com</to>
+                <subject>Servicio de </star> </subject>
+                <msg>   
+                El alumno ha solicitado el servicio de </star>
+                </msg>
+            </mail>
+        </template>
+    </category>
+        
+
+</aiml>
